@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/mainPane.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fortraie.controller.MainController">
+   <center>
+      <TableView id="tableView" fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn id="idColumn" fx:id="idTableColumn" prefWidth="50.0" text="ID" />
+            <TableColumn id="nameColumn" fx:id="nameTableColumn" prefWidth="200.0" text="Name" />
+            <TableColumn id="passwordColumn" fx:id="passwordTableColumn" maxWidth="1.7976931348623157E308" prefWidth="180.0" text="Password" />
+            <TableColumn id="categoryColumn" fx:id="categoryTableColumn" maxWidth="1.7976931348623157E308" prefWidth="165.0" text="Category" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <MenuBar id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="categoriesMenuItem" mnemonicParsing="false" text="Categories" />
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="addMenuItem" mnemonicParsing="false" text="Add" />
+              <MenuItem fx:id="changeMenuItem" mnemonicParsing="false" text="Modify" />
+                  <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" text="Remove" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Find">
+              <items>
+                <MenuItem fx:id="searchMenuItem" mnemonicParsing="false" text="Find" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

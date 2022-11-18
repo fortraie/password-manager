@@ -1,0 +1,28 @@
+#image {
+    -fx-background-image: url("../images/mymind-tZCrFpSNiIQ-unsplash.jpg");
+    -fx-background-size: cover;
+}
+#title {
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+#createNewLabel {
+    -fx-font-size: 12px;
+    -fx-text-fill: #565656;
+    -fx-underline: true;
+}
+.button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.label {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
